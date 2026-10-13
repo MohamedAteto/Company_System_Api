@@ -149,3 +149,4 @@ C:\Users\Muhammed.Hossny\source\repos\Company_System_Api\Company_System_Api\obj\
 C:\Users\Muhammed.Hossny\source\repos\Company_System_Api\Company_System_Api\obj\Debug\net8.0\Company_System_Api.pdb
 C:\Users\Muhammed.Hossny\source\repos\Company_System_Api\Company_System_Api\obj\Debug\net8.0\Company_System_Api.genruntimeconfig.cache
 C:\Users\Muhammed.Hossny\source\repos\Company_System_Api\Company_System_Api\obj\Debug\net8.0\ref\Company_System_Api.dll
+C:\Users\Muhammed.Hossny\source\repos\Company_System_Api\Company_System_Api\obj\Debug\net8.0\Company_System_Api.sourcelink.json

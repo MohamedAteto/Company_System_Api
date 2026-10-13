@@ -4,6 +4,7 @@ using Company_System_Api.DTOs.ProjectDTOs;
 using Company_System_Api.Mapping;
 using Company_System_Api.Models;
 using Company_System_Api.Reposatories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,7 @@ namespace Company_System_Api.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreatePrject(CreateProjectDTO DTO)
         {
             if (DTO is null)
@@ -61,6 +63,7 @@ namespace Company_System_Api.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateDepartment(int id, UpdateProjectDTO DTO)
         {
             if (DTO is null)

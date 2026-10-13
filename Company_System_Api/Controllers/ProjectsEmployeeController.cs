@@ -4,6 +4,7 @@ using Company_System_Api.DTOs.ProjectsEmployeeDTOs;
 using Company_System_Api.Mapping;
 using Company_System_Api.Models;
 using Company_System_Api.Reposatories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,7 @@ namespace Company_System_Api.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateEmployee(CreatePojectsEmployeeDTO DTO)
         {
             if (DTO is null)
